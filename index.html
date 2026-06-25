@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EPA 608 Refrigerant Flashcards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <section class="topbar">
+      <div>
+        <p class="eyebrow">EPA 608 Study Tool</p>
+        <h1>Refrigerant Flashcards</h1>
+      </div>
+      <div class="scoreboard" aria-label="Study progress">
+        <span><strong id="known-count">0</strong> known</span>
+        <span><strong id="review-count">0</strong> review</span>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Card filters">
+      <label>
+        Category
+        <select id="category-filter"></select>
+      </label>
+      <label>
+        Study mode
+        <select id="mode-filter">
+          <option value="all">All cards</option>
+          <option value="review">Review pile</option>
+          <option value="known">Known pile</option>
+        </select>
+      </label>
+      <button id="shuffle-button" type="button">Shuffle</button>
+      <button id="reset-button" type="button">Reset Progress</button>
+    </section>
+
+    <section class="study-layout">
+      <article class="card-panel">
+        <div class="card-meta">
+          <span id="card-category">Category</span>
+          <span id="card-position">1 / 1</span>
+        </div>
+        <button class="flashcard" id="flashcard" type="button" aria-live="polite">
+          <span class="card-label" id="card-label">Question</span>
+          <span class="card-text" id="card-text"></span>
+          <span class="flip-hint">Click to flip</span>
+        </button>
+        <div class="actions">
+          <button id="previous-button" type="button">Previous</button>
+          <button id="review-button" type="button">Needs Review</button>
+          <button id="known-button" type="button">I Know This</button>
+          <button id="next-button" type="button">Next</button>
+        </div>
+      </article>
+
+      <aside class="reference-panel" aria-label="Quick reference">
+        <h2>Quick Reference</h2>
+        <dl>
+          <dt>CFC</dt>
+          <dd>Chlorofluorocarbon. Ozone-depleting, phased out for new production.</dd>
+          <dt>HCFC</dt>
+          <dd>Hydrochlorofluorocarbon. Lower ODP than CFCs, still ozone-depleting.</dd>
+          <dt>HFC</dt>
+          <dd>Hydrofluorocarbon. No chlorine, zero ODP, often high GWP.</dd>
+          <dt>HFO</dt>
+          <dd>Hydrofluoroolefin. Low GWP, often mildly flammable A2L.</dd>
+          <dt>Natural</dt>
+          <dd>Ammonia, CO2, hydrocarbons, water, and air. Often low GWP but require safety-specific handling.</dd>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="table-section">
+      <h2>Refrigerant Cheat Sheet</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Refrigerant</th>
+              <th>Chemical name / blend</th>
+              <th>Type</th>
+              <th>Safety</th>
+              <th>EPA 608 memory hook</th>
+            </tr>
+          </thead>
+          <tbody id="cheat-sheet"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="sources">
+      <h2>Sources Used</h2>
+      <p>This app is a study aid, not a replacement for an EPA-approved Section 608 prep manual or proctored test.</p>
+      <ul>
+        <li><a href="https://www.epa.gov/section608/section-608-technician-certification">EPA Section 608 Technician Certification</a></li>
+        <li><a href="https://www.epa.gov/snap/substitutes-refrigeration-and-air-conditioning">EPA SNAP refrigeration and air-conditioning substitutes</a></li>
+        <li><a href="https://www.ashrae.org/technical-resources/standards-and-guidelines">ASHRAE standards and safety classification context</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
