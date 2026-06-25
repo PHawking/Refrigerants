@@ -208,6 +208,12 @@ var refrigerantCards = [];
 
 refrigerants.forEach(function (item) {
   refrigerantCards.push({
+    id: item.id + "-identity",
+    category: "Refrigerant ID",
+    question: "What is " + item.name + " refrigerant?",
+    answer: item.name + " is " + item.chemical + ". It is a " + item.type + " refrigerant. " + item.hook
+  });
+  refrigerantCards.push({
     id: item.id + "-chemical",
     category: "Chemical Names",
     question: "What is the chemical name or blend for " + item.name + "?",
