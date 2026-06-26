@@ -56,6 +56,14 @@ const refrigerants = [
     hook: "R-22 retrofit candidate; has temperature glide and should be charged as liquid."
   },
   {
+    id: "r407a",
+    name: "R-407A",
+    chemical: "HFC blend: R-32, R-125, R-134a",
+    type: "HFC blend",
+    safety: "A1: lower toxicity, no flame propagation",
+    hook: "Common lower-GWP retrofit option for some R-404A/R-507 commercial refrigeration systems; zeotropic blend, charge as liquid."
+  },
+  {
     id: "r410a",
     name: "R-410A",
     chemical: "Near-azeotropic HFC blend: R-32, R-125",
@@ -86,6 +94,14 @@ const refrigerants = [
     type: "HFO",
     safety: "A2L: lower toxicity, lower flammability",
     hook: "Low-GWP HFO used in chillers and blends."
+  },
+  {
+    id: "r450a",
+    name: "R-450A",
+    chemical: "HFO/HFC blend: R-1234ze(E), R-134a",
+    type: "HFO/HFC blend",
+    safety: "A1: lower toxicity, no flame propagation",
+    hook: "Lower-GWP R-134a replacement option used in some chillers, medium-temperature systems, and heat pumps."
   },
   {
     id: "r290",
@@ -126,6 +142,14 @@ const refrigerants = [
     type: "Natural refrigerant",
     safety: "A1: lower toxicity, no flame propagation",
     hook: "Used in special chillers; safe but limited by freezing and vacuum operation."
+  },
+  {
+    id: "r728",
+    name: "R-728",
+    chemical: "Nitrogen",
+    type: "Natural refrigerant",
+    safety: "A1: lower toxicity, no flame propagation",
+    hook: "Natural refrigerant with zero ODP and essentially zero direct GWP; mostly special-purpose cryogenic or air-cycle context."
   }
 ];
 
@@ -177,6 +201,24 @@ const conceptCards = [
     category: "Families",
     question: "What makes HFOs different?",
     answer: "HFOs are unsaturated fluorocarbons designed for low GWP. Many are A2L mildly flammable refrigerants."
+  },
+  {
+    id: "natural-names",
+    category: "Natural Refrigerants",
+    question: "Which natural refrigerant numbers and names are worth memorizing?",
+    answer: "R-717 is ammonia, R-744 is carbon dioxide, R-290 is propane, R-600a is isobutane, R-718 is water, and R-728 is nitrogen."
+  },
+  {
+    id: "snap-thinking",
+    category: "SNAP / Replacement",
+    question: "How should you think about SNAP replacement questions?",
+    answer: "SNAP is EPA's substitute policy by end-use. For study, know whether a refrigerant is old ozone-depleting CFC/HCFC, high-GWP HFC, lower-GWP HFO/HFC blend, or natural refrigerant."
+  },
+  {
+    id: "replacement-examples",
+    category: "SNAP / Replacement",
+    question: "What replacement roles should you connect to R-407A and R-450A?",
+    answer: "R-407A is often associated with replacing R-404A/R-507 in some commercial refrigeration. R-450A is often associated with lower-GWP replacement for R-134a in some equipment."
   },
   {
     id: "recover",
