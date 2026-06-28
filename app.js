@@ -203,10 +203,76 @@ const conceptCards = [
     answer: "HFOs are unsaturated fluorocarbons designed for low GWP. Many are A2L mildly flammable refrigerants."
   },
   {
-    id: "natural-names",
+    id: "natural-r717",
     category: "Natural Refrigerants",
-    question: "Which natural refrigerant numbers and names are worth memorizing?",
-    answer: "R-717 is ammonia, R-744 is carbon dioxide, R-290 is propane, R-600a is isobutane, R-718 is water, and R-728 is nitrogen."
+    question: "What natural refrigerant is R-717?",
+    answer: "R-717 is ammonia. It is a natural refrigerant with higher toxicity, commonly used in industrial refrigeration."
+  },
+  {
+    id: "natural-r744",
+    category: "Natural Refrigerants",
+    question: "What natural refrigerant is R-744?",
+    answer: "R-744 is carbon dioxide, also called CO2. It is A1 but operates at very high pressures."
+  },
+  {
+    id: "natural-r290",
+    category: "Natural Refrigerants",
+    question: "What natural refrigerant is R-290?",
+    answer: "R-290 is propane. It is a natural hydrocarbon refrigerant and is A3, meaning highly flammable."
+  },
+  {
+    id: "natural-r600a",
+    category: "Natural Refrigerants",
+    question: "What natural refrigerant is R-600a?",
+    answer: "R-600a is isobutane. It is a natural hydrocarbon refrigerant and is A3, meaning highly flammable."
+  },
+  {
+    id: "natural-r718",
+    category: "Natural Refrigerants",
+    question: "What natural refrigerant is R-718?",
+    answer: "R-718 is water. It is A1 but is limited by freezing and vacuum-operation concerns."
+  },
+  {
+    id: "natural-r728",
+    category: "Natural Refrigerants",
+    question: "What natural refrigerant is R-728?",
+    answer: "R-728 is nitrogen. It is A1 and mostly appears in special-purpose cryogenic or air-cycle contexts."
+  },
+  {
+    id: "natural-ammonia",
+    category: "Natural Refrigerants",
+    question: "What is ammonia's refrigerant number?",
+    answer: "Ammonia is R-717."
+  },
+  {
+    id: "natural-co2",
+    category: "Natural Refrigerants",
+    question: "What is carbon dioxide's refrigerant number?",
+    answer: "Carbon dioxide, or CO2, is R-744."
+  },
+  {
+    id: "natural-propane",
+    category: "Natural Refrigerants",
+    question: "What is propane's refrigerant number?",
+    answer: "Propane is R-290."
+  },
+  {
+    id: "natural-isobutane",
+    category: "Natural Refrigerants",
+    question: "What is isobutane's refrigerant number?",
+    answer: "Isobutane is R-600a."
+  },
+  {
+    id: "natural-water",
+    category: "Natural Refrigerants",
+    question: "What is water's refrigerant number?",
+    answer: "Water is R-718."
+  },
+  {
+    id: "natural-nitrogen",
+    category: "Natural Refrigerants",
+    question: "What is nitrogen's refrigerant number?",
+    answer: "Nitrogen is R-728."
   },
   {
     id: "snap-thinking",
