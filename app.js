@@ -385,7 +385,7 @@ refrigerants.forEach(function (item) {
   });
 });
 
-var cards = conceptCards.concat(refrigerantCards);
+var cards = conceptCards.concat(refrigerantCards, examCards);
 var cardOrder = cards.map(function (_, index) { return index; });
 let currentIndex = 0;
 let showingAnswer = false;
