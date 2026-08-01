@@ -353,6 +353,138 @@ const conceptCards = [
     category: "EPA 608 Core",
     question: "What is the venting rule memory hook?",
     answer: "Do not knowingly vent regulated refrigerants during service, maintenance, repair, or disposal."
+  },
+  {
+    id: "sh-definition",
+    category: "Superheat & Subcooling",
+    question: "What is superheat?",
+    answer: "Superheat is the number of degrees refrigerant vapor is above its saturation temperature at the measured pressure. It confirms that liquid has boiled into vapor and shows how much additional sensible heat the vapor gained."
+  },
+  {
+    id: "sc-definition",
+    category: "Superheat & Subcooling",
+    question: "What is subcooling?",
+    answer: "Subcooling is the number of degrees liquid refrigerant is below its saturation temperature at the measured pressure. It confirms that vapor has condensed into liquid and shows the temperature margin before the liquid can flash into vapor."
+  },
+  {
+    id: "sh-formula",
+    category: "Superheat & Subcooling",
+    question: "How is superheat calculated?",
+    answer: "Superheat = actual suction-line temperature − saturated vapor temperature. Convert suction pressure to saturation temperature with the correct refrigerant P-T data, then subtract that value from the measured line temperature."
+  },
+  {
+    id: "sc-formula",
+    category: "Superheat & Subcooling",
+    question: "How is subcooling calculated?",
+    answer: "Subcooling = saturated liquid temperature − actual liquid-line temperature. Convert liquid-line pressure to saturation temperature with the correct refrigerant P-T data, then subtract the measured line temperature."
+  },
+  {
+    id: "sh-where",
+    category: "Superheat & Subcooling",
+    question: "Where is superheat measured?",
+    answer: "Measure pressure and temperature at corresponding points on the low side. Evaporator superheat is taken near the evaporator outlet. Total system superheat is commonly taken at the suction service port near the condensing unit and includes heat gained through the suction line. State which one you measured."
+  },
+  {
+    id: "sc-where",
+    category: "Superheat & Subcooling",
+    question: "Where is subcooling measured?",
+    answer: "Measure liquid pressure and liquid-line temperature at corresponding points near the condenser outlet or liquid service valve. Avoid taking temperature after a component or long line section that creates a pressure drop unless you also measure pressure there."
+  },
+  {
+    id: "measurement-procedure",
+    category: "Superheat & Subcooling",
+    question: "What is a reliable procedure for measuring superheat and subcooling?",
+    answer: "Verify airflow and clean coils first. Run the system in the required charging mode and let it stabilize. Connect gauges rated for the refrigerant, clamp a calibrated temperature probe firmly to clean tubing, insulate the probe from ambient air, record pressure and temperature at matching locations, then use the correct P-T data. Follow the unit charging instructions and applicable refrigerant safety procedures."
+  },
+  {
+    id: "blend-dew-bubble",
+    category: "Superheat & Subcooling",
+    question: "For a zeotropic blend, which saturation values are used?",
+    answer: "Use the dew-point temperature for superheat and the bubble-point temperature for subcooling. Using the wrong side of a blend's temperature glide produces an incorrect result."
+  },
+  {
+    id: "normal-reading",
+    category: "Superheat & Subcooling",
+    question: "What does a normal superheat or subcooling reading look like?",
+    answer: "The correct reading is the manufacturer's target at the specified load, airflow, indoor conditions, outdoor temperature, mode, and compressor capacity. Many comfort-cooling systems may operate around 8–20°F superheat and 8–15°F subcooling, but those are only broad illustrations—not charging targets. Some equipment legitimately operates outside them."
+  },
+  {
+    id: "metering-device-method",
+    category: "Superheat & Subcooling",
+    question: "How does the metering device affect the preferred charging check?",
+    answer: "Fixed-orifice or capillary systems are commonly charged using target superheat based on indoor wet-bulb and outdoor dry-bulb conditions. TXV or EEV systems regulate evaporator superheat, so charge is commonly verified by the manufacturer's target subcooling. Always follow the equipment label or service instructions."
+  },
+  {
+    id: "high-sh-impact",
+    category: "Superheat & Subcooling",
+    question: "What does high superheat mean, and how can it affect the system?",
+    answer: "High superheat means the evaporator is starved or the vapor gained excessive heat. Possible causes include low charge, a restricted metering device or liquid line, insufficient feed, or high load. It reduces active evaporator area and capacity and can raise compressor discharge temperature, risking oil and compressor damage."
+  },
+  {
+    id: "low-sh-impact",
+    category: "Superheat & Subcooling",
+    question: "What does low superheat mean, and how can it affect the system?",
+    answer: "Low superheat means vapor leaving the evaporator is only slightly above saturation. Possible causes include overfeeding, low indoor airflow/load, or an overcharge on some fixed-orifice systems. Extremely low superheat can allow liquid floodback, dilute compressor oil, and cause slugging or compressor damage."
+  },
+  {
+    id: "high-sc-impact",
+    category: "Superheat & Subcooling",
+    question: "What does high subcooling mean, and how can it affect the system?",
+    answer: "High subcooling means a large amount of heat has been removed from the condensed liquid or liquid is backing up in the condenser. Possible causes include overcharge or a downstream restriction. It can occupy condenser volume with liquid, raise head pressure and power use, and reduce efficiency."
+  },
+  {
+    id: "low-sc-impact",
+    category: "Superheat & Subcooling",
+    question: "What does low subcooling mean, and how can it affect the system?",
+    answer: "Low subcooling means there is little liquid temperature margin before flashing. Possible causes include low charge, inadequate condensing, or excessive load. Flash gas can reach the metering device, reduce refrigerant feed, starve the evaporator, and lower capacity."
+  },
+  {
+    id: "diagnostic-undercharge",
+    category: "Superheat & Subcooling",
+    question: "What reading pattern commonly suggests an undercharged system?",
+    answer: "High superheat plus low subcooling, often with low suction and head pressures, commonly supports low charge. Confirm correct airflow and load, look for leaks, and compare with manufacturer data before adding refrigerant. Low pressures alone do not prove undercharge."
+  },
+  {
+    id: "diagnostic-overcharge",
+    category: "Superheat & Subcooling",
+    question: "What reading pattern commonly suggests an overcharged system?",
+    answer: "Low superheat plus high subcooling, often with elevated head pressure, can support overcharge. Verify airflow, condenser cleanliness, operating conditions, and metering-device behavior before recovering refrigerant."
+  },
+  {
+    id: "diagnostic-restriction",
+    category: "Superheat & Subcooling",
+    question: "What pattern can indicate a liquid-line or metering-device restriction?",
+    answer: "High superheat with normal-to-high subcooling can indicate liquid backing up ahead of a restriction while the evaporator is starved. Look for a temperature drop or frost at the restriction, low suction pressure, and reduced capacity. This differs from low charge, which usually also produces low subcooling."
+  },
+  {
+    id: "diagnostic-low-airflow",
+    category: "Superheat & Subcooling",
+    question: "How can low evaporator airflow affect the readings?",
+    answer: "Low airflow reduces evaporator heat load and commonly lowers suction pressure and superheat, with risk of coil icing and liquid floodback. A TXV may partly maintain superheat, so verify filter, blower speed, coil cleanliness, duct restrictions, static pressure, and airflow before changing charge."
+  },
+  {
+    id: "diagnostic-condenser-airflow",
+    category: "Superheat & Subcooling",
+    question: "How can poor condenser airflow affect the system?",
+    answer: "A dirty condenser, failed fan, recirculated hot air, or high ambient temperature can raise condensing pressure, discharge temperature, compressor amperage, and energy use. Subcooling may rise, fall, or remain near target depending on the system, so high head pressure must not automatically be diagnosed as overcharge."
+  },
+  {
+    id: "diagnostic-txv",
+    category: "Superheat & Subcooling",
+    question: "How can TXV underfeeding and overfeeding appear in the readings?",
+    answer: "An underfeeding TXV can produce high superheat while subcooling remains normal or high. An overfeeding TXV can produce low superheat while subcooling may remain near target. Check bulb mounting and insulation, equalizer condition, inlet screen, pressure drop, and valve operation before condemning or adjusting the valve."
+  },
+  {
+    id: "systematic-diagnosis",
+    category: "Superheat & Subcooling",
+    question: "Why should charge never be diagnosed from one reading alone?",
+    answer: "Superheat and subcooling respond to charge, airflow, heat load, coil condition, metering performance, restrictions, compressor capacity, ambient conditions, and measurement location. Use both readings with suction and head pressure, temperature split, airflow, amperage, line temperatures, and manufacturer specifications."
+  },
+  {
+    id: "stabilization-and-safety",
+    category: "Superheat & Subcooling",
+    question: "What checks prevent misleading or unsafe superheat and subcooling measurements?",
+    answer: "Confirm the correct refrigerant and operating mode, adequate indoor and outdoor airflow, clean coils, stable load and compressor stage, accurate instruments, and matching pressure/temperature locations. Never vent refrigerant; use rated PPE, hoses, gauges, and recovery procedures, and account for A2L or other refrigerant-specific hazards."
   }
 ];
 
